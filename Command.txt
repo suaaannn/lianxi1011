@@ -1,0 +1,21 @@
+1111111111111111111
+
+
+git克隆github的项目
+ssh配置 key-gen复制SSH的key到github
+ssh文件夹里添加config文件，文件内写入
+
+Host github.com
+User YourEmail（你的邮箱）
+Hostname ssh.github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
+Port 443
+
+使用
+ssh -T git@github.com
+测试
+
+命令:git remote add origin(定死的) git@gitee.com:Qcute/git_test_2023.git
+
+git remote origin master 推送本地master分支的文件到origin远程仓库
